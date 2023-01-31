@@ -1,0 +1,5 @@
+<launch>    
+
+    <node pkg="tracking" type="tracking_auto" name="tracking_auto" output="screen" args="--record"/>
+
+</launch>

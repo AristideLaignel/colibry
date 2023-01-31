@@ -1,0 +1,27 @@
+V1
+# 3D Points
+8                      # Number of points
+-0.235   -0.135   0.0     # Point 0
+0.235    -0.135   0.0     # Point 1
+0.235     0.135   0.0     # Point 2
+-0.235    0.135   0.0     # Point 3
+-0.235   -0.135   -0.004   # Point 4
+0.235    -0.135   -0.004  # Point 5
+0.235    0.135   -0.004   # Point 6
+-0.235   0.135   -0.004  # Point 7
+# 3D Lines
+0                  # Number of line    
+# Faces from 3D lines
+0                  # Number of faces
+# Faces from 3D points
+6                 # Number of faces
+4 0 1 2 3         # Face 0: [number of points] [index of the 3D points]...
+4 4 5 6 7
+4 0 1 5 4
+4 1 5 6 2
+4 2 6 7 3
+4 4 0 3 7
+# 3D cylinders
+0                  # Number of cylinders
+# 3D circles
+0                  # Number of circles

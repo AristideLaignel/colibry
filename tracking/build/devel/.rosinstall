@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/aristide/ros_ws/src/tracking/build/devel/setup.sh
