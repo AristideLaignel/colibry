@@ -1,2 +1,3 @@
 # colibry
-package to get image from the R200 and compute the distance an dthe depth image 
+package to get images from the R200 and reproject the pointcloud on a specific area to compute the pose of the object desired.
+It's possible to add plane filter in the launch file
