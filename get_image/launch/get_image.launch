@@ -1,5 +1,5 @@
 <launch>
 
-    <node pkg="get_image" name="get_image_node" type="get_image_node.py"  output="screen"  args="filtesdr"/>
+    <node pkg="get_image" name="get_image_node" type="get_image_node.py"  output="screen"  args="filter"/>
 
 </launch>

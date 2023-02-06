@@ -31,8 +31,6 @@ import pyransac3d as pyrsc
 import sys
 
 
-
-
 class get_image:
 
 
@@ -144,6 +142,8 @@ class get_image:
                         point.y = ((v-self.c_y ) / self.f_y)*depth
                         point.z = depth
 
+                        print("Depth : ", depth)
+
                         if self.filter :
                             pt = []
                             pt.append(point.x)
@@ -182,6 +182,8 @@ class get_image:
         self.points_clicked = []
 
         cv2.imshow('image', image)
+
+        print("Click first on the top left corner of the pointcloud that you want and then on the bottom right corner")
         
         cv2.setMouseCallback('image', self.click_event)
         # wait for a key to be pressed to exit
@@ -212,9 +214,9 @@ class get_image:
                 print("Get All points ",self.init)
                 self.pointcloud_pub = rospy.Publisher('area_pointcloud', PointCloud, queue_size=100000)
                 #self.pointcloud_msg = PointCloud()
-                print("fail to inti poinrtcloud")
+                #print("fail to inti poinrtcloud")
                 self.init = True
-
+                print("fail to inti is truepoinrtcloud")
 
     def get_camera_info(self, msg):
 
